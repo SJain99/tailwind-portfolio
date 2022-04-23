@@ -1,0 +1,208 @@
+<!-- This website was built using the CDN of the Tailwind CSS framework, obtained from: https://tailwindcss.com/docs/installation/play-cdn
+
+The code used for this website was written by referencing the documentation of the Tailwind CSS framework, obtained from various pages from: https://tailwindcss.com/docs/
+ -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="A portfolio of Saransh Jain, an aspiring Software Developer based out of Toronto, Ontario, Canada.">
+  <meta name="keywords" content="Software Developer, Saransh Jain, Portfolio, Toronto, Ontario, Canada, Programming, Development">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+          	sans: ["Poppins", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+          }
+        }
+      }
+    }
+  </script>
+  <title>Saransh Jain - Software Developer</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-T3LBY94EXD"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-T3LBY94EXD');
+	</script>
+</head>
+<body>
+	<header class="sticky top-0 bg-white z-10 opacity-90">
+		<nav class="flex flex-col">
+			<div>
+				<div class="flex justify-between p-6 px-4 items-center">
+					<h2 class="text-3xl tracking-tight font-bold font-sans">
+						<a class="hover:text-gray-600" href="index.html">Saransh Jain</a>
+					</h2>
+					<div class="hidden md:flex">
+						<ul>
+							<li class="inline text-gray-600 px-1">
+								<a class="hover:text-black" href="projects.html">Projects</a>
+							</li>
+							<li class="inline text-gray-600 px-1">
+								<a class="hover:text-black" href="resume.html">Resume</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Mobile menu code obtained from Ian Masae, Section.io: https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+					<button class="md:hidden mobile-menu-button focus:bg-gray-200 p-1 rounded-lg">
+						<!-- Icon acquired from HeroIcons: https://heroicons.com/ -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+		  				<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="hidden w-full block mobile-menu mb-4">
+				<ul class="flex flex-col">
+					<li class="border">
+						<a href="projects.html" class="block text-gray-600 p-2 focus:text-black">Projects</a>
+					</li>
+					<li class="border-b">
+						<a href="resume.html" class="block text-gray-600 p-2 focus:text-black">Resume</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<script type="text/javascript">
+			const btn = document.querySelector("button.mobile-menu-button");
+			const menu = document.querySelector(".mobile-menu");
+			
+			// Add Event Listeners
+			btn.addEventListener("click", () => {
+				menu.classList.toggle("hidden");
+			});
+		</script>
+	</header>
+	<main class="main-content">
+		<script type="text/javascript">
+			const main = document.querySelector(".main-content");
+
+			// "touchstart" DOM event learned about from W3Schools: https://www.w3schools.com/jsref/dom_obj_event.asp
+			main.addEventListener("touchstart", () => {
+				menu.classList.add("hidden");
+			})
+		</script>
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 pt-4 pb-12 md:px-12 md:pt-12 md:pb-20 lg:px-24">
+			<div class="my-auto">
+				<h1 class="mb-6 text-5xl md:text-6xl tracking-tight font-bold">Hello! My name is Saransh Jain and this is my portfolio.</h1>
+				<p class="text-gray-600">I am an aspiring Software Developer based out of Toronto, Ontario, Canada. Currently, I am in the third-year of the Computer Science program at the University of Toronto, and seek to work full-time as a Software Developer thereafter. Through this website, I aim to provide some background on myself, in terms of the skills I bring, as well as the projects I have worked on and the experiences I have undergone to display them.</p>
+			</div>
+			<div>
+				<img src="images/Saransh Jain.jpg" alt="Picture of Saransh Jain">
+			</div>
+		</div>
+		<div class="flex flex-col items-center px-4 mb-4 md:px-12">
+			<h2 class="mb-4 text-4xl md:text-5xl tracking-tight font-bold">Projects</h2>
+			<p class="text-gray-600">Some of the projects I have, and continue to work on. To learn more about them, <a href="projects.html" class="text-black underline">click here.</a></p>
+		</div>
+		<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4 pt-4 pb-12 md:px-12 md:pt-12 md:pb-20 lg:px-24">
+			<a href="https://epta.ca" target=”_blank”>
+				<div class="bg-gradient-to-br	from-pink-500 via-purple-500 to-indigo-500 rounded-lg p-6 md:hover:scale-110 transition duration-150 ease-in-out">
+					<img class="rounded-lg mb-6 drop-shadow-lg" src="images/Epta.jpg" alt="Screenshot of Epta">
+					<h3 class="text-3xl tracking-tight font-bold mb-2 text-white">Epta</h3>
+					<p class="text-white">A portfolio website for myself and six of my friends.</p>
+				</div>
+			</a>
+			<a href="showcase.html">
+				<div class="bg-gradient-to-br	from-teal-400 via-cyan-400 to-sky-500 rounded-lg p-6 md:hover:scale-110 transition duration-150 ease-in-out">
+					<img class="rounded-lg mb-6 drop-shadow-lg" src="images/Spacestagram.jpg" alt="Screenshot of Spacestagram">
+					<h3 class="text-3xl tracking-tight font-bold mb-2 text-white">Spacestagram</h3>
+					<p class="text-white">A social media website showcasing NASA's Astronomy Picture of the Day.</p>
+				</div>
+			</a>
+			<a href="https://shuttershrike.ca" target=”_blank”>
+				<div class="bg-gradient-to-br	from-lime-400 via-green-400 to-emerald-500 rounded-lg p-6 md:hover:scale-110 transition duration-150 ease-in-out">
+					<img class="rounded-lg mb-6 drop-shadow-lg" src="images/ShutterShrike.jpg" alt="ShutterShrike">
+					<h3 class="text-3xl tracking-tight font-bold mb-2 text-white">ShutterShrike</h3>
+					<p class="text-white">A peer-to-peer marketplace for film equipment.</p>
+				</div>
+			</a>
+		</div>
+		<div class="flex flex-col items-center px-4 mb-4 md:px-12">
+			<h2 class="mb-2 text-4xl md:text-5xl tracking-tight font-bold">Skills</h2>
+			<p class="text-gray-600">Some of the skills that I possess with regards to software development, and in general. To see my full resume, <a href="resume.html" class="text-black underline">click here.</a></p>
+		</div>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 px-4 pt-4 pb-12 md:px-12 md:pt-12 md:pb-20 lg:px-28">
+			<div>
+				<h3 class="text-3xl tracking-tight font-bold mb-2">Languages</h3>
+				<ul class="text-gray-600 list-none lg:list-disc">
+					<li>Python</li>
+					<li>Java</li>
+					<li>SQL</li>
+					<li>JavaScript</li>
+					<li>HTML/CSS</li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="text-3xl tracking-tight font-bold mb-2">Tools & Frameworks</h3>
+				<ul class="text-gray-600 list-none lg:list-disc">
+					<li>React.js</li>
+					<li>Next.js</li>
+					<li>Redux</li>
+					<li>Node.js/Express.js</li>
+					<li>MySQL</li>
+					<li>MS SQL Server</li>
+					<li>Git/Github</li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="text-3xl tracking-tight font-bold mb-2">Design</h3>
+				<ul class="text-gray-600 list-none lg:list-disc">
+					<li>Tailwind CSS</li>
+					<li>Chakra UI</li>
+					<li>Styled Components</li>
+					<li>Bootstrap</li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="text-3xl tracking-tight font-bold mb-2">Knowledge</h3>
+				<ul class="text-gray-600 list-none lg:list-disc">
+					<li>Data Structures and Algorithms</li>
+					<li>Object-Oriented Programming (OOP)</li>
+					<li>Continuous Integration/Continuous Deployment (CI/CD)</li>
+					<li>Content Management Systems (CMS)</li>
+					<li>Server-Side Rendering and Static Site Generation</li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="text-3xl tracking-tight font-bold mb-2">Soft Skills</h3>
+				<ul class="text-gray-600 list-none lg:list-disc">
+					<li>Leadership</li>
+					<li>Effective Communication</li>
+					<li>Detail-Oriented</li>
+					<li>Dilligent Problem Solving</li>
+					<li>Deadline-Driven</li>
+				</ul>
+			</div>
+		</div>
+		<hr class="mb-12">
+	</main>
+	<footer>
+		<div class="flex flex-col items-center px-4 mb-12 px-4">
+			<h3 class="text-3xl tracking-tight font-bold">Saransh Jain</h3>
+			<!-- These icons were obtained from the FontAwesome CDN, obtained from: https://cdnjs.com/libraries/font-awesome 
+			
+			The icons themselves were obtained from: https://fontawesome.com/icons
+			-->
+			<div class="mb-1">
+				<a href="https://www.linkedin.com/in/sjain99/" target="_blank"><i class="fa-brands fa-linkedin text-2xl mr-1 hover:scale-125 transition-transform duration-150 ease-in-out text-sky-700"></i></a>
+				<a href="https://www.github.com/SJain99/" target="_blank"><i class="fa-brands fa-github-square text-2xl mr-1 hover:scale-125 transition-transform duration-150 ease-in-out"></i></a>
+				<a href="mailto:saransh-jain@outlook.com"><i class="fa-solid fa-square-envelope text-2xl hover:scale-125 transition-transform duration-150 ease-in-out text-violet-700"></i></a>
+			</div>
+			<p class="text-gray-600">This website was built using the CDN of the <a href="https://tailwindcss.com/docs/installation/play-cdn" target="_blank" class="text-black underline">Tailwind CSS framework.</a></p>
+		</div>
+	</footer>
+</body>
+</html>
